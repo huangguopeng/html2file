@@ -37,7 +37,7 @@ public class Html2PdfService {
         if (success) {
             return outputPath;
         } else {
-            if(FilesUtils.isExistNotCreate(outputPath)){
+            if(FilesUtils.isExist(outputPath)){
                 return outputPath;
             }else {
 
