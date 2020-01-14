@@ -13,28 +13,28 @@
     <fileSets>
         <fileSet>
             <directory>src/main/resources/</directory>
-            <outputDirectory>/resources</outputDirectory>
+            <outputDirectory>${file.separator}resources</outputDirectory>
         </fileSet>
         <fileSet>
             <directory>src/main/plugins/</directory>
-            <outputDirectory>/plugins</outputDirectory>
+            <outputDirectory>${file.separator}plugins</outputDirectory>
         </fileSet>
         <fileSet>
             <directory>bin/</directory>
-            <outputDirectory>/bin</outputDirectory>
+            <outputDirectory>${file.separator}bin</outputDirectory>
         </fileSet>
     </fileSets>
 
     <dependencySets>
         <dependencySet>
-            <outputDirectory>/lib</outputDirectory>
+            <outputDirectory>${file.separator}lib</outputDirectory>
             <scope>runtime</scope>
             <excludes>
                 <exclude>${project.groupId}:${project.artifactId}</exclude>
             </excludes>
         </dependencySet>
         <dependencySet>
-            <outputDirectory>/</outputDirectory>
+            <outputDirectory>${file.separator}</outputDirectory>
             <includes>
                 <include>${project.groupId}:${project.artifactId}</include>
             </includes>
